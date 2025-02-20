@@ -1,0 +1,388 @@
+@font-face {
+    font-family: "CooperBoldItalic";  /* This is the name you'll use in CSS */
+    src: url("CooperBold-Italic.ttf"); 
+}
+@font-face {
+    font-family: "CooperBoldRegular";  /* This is the name you'll use in CSS */
+    src: url("CooperBold-Regular.ttf");
+}
+@font-face {
+    font-family: "CooperLightBold";  /* This is the name you'll use in CSS */
+    src: url("CooperLB-Bold.ttf");
+}
+@font-face {
+    font-family: "CooperLightBoldItalic";  /* This is the name you'll use in CSS */
+    src: url("CooperLB-Italic.ttf");
+}
+@font-face {
+    font-family: "CooperMediumItalic";  /* This is the name you'll use in CSS */
+    src: url("CooperMed-Italic.ttf");
+}
+@font-face {
+    font-family: "CooperMediumRegular";  /* This is the name you'll use in CSS */
+    src: url("CooperMed-Regular.ttf");
+}
+@font-face {
+    font-family: "CooperThinItalic";  /* This is the name you'll use in CSS */
+    src: url("CooperT-Italic.ttf");
+}
+@font-face {
+    font-family: "CooperThinRegular";  /* This is the name you'll use in CSS */
+    src: url("CooperT-Regular.ttf");
+}
+
+
+/* General Page Styling */
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: justify; /* Ensures justified alignment */
+    width: 60%; /* Controls text block width */
+    margin: auto;
+    padding: 0;
+    padding-top: 10vh;
+}
+
+body {
+    font-family: "CooperMediumRegular";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #EDD7B7;
+}
+
+
+h1 {
+    font-family: "CooperLightBold";
+    color: #C9372A;
+    font-size: 2.3em
+}
+
+h2 {
+    font-family: "CooperLightBold";
+}
+
+h3 {
+    font-family: "CooperMediumItalic";
+}
+
+h4 {
+    font-family: "CooperMediumRegular";
+    font-size: 0.8em
+}
+
+h5 {
+    font-family: "CooperThinItalic";
+    font-size: 0.8em
+}
+
+p {
+    font-family:  "CooperThinRegular";
+}
+
+/* Style for the large numbers */
+.large-number {
+    font-size: 3em; /* Adjust the size as needed */
+    color: #C9372A; /* Adjust the color as needed */
+    display: block; /* Make the numbers block elements to ensure they are on their own lines */
+    margin-bottom: 0.2em; /* Add some space below the numbers */
+}
+
+/* Style for the century text */
+.century-text {
+    font-size: 1em; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    display: block; /* Ensure the text is on its own line */
+    margin-bottom: 0.8em; /* Add some space below the text */
+}
+
+/* Flexbox container for the numbers */
+.numbers-container {
+    display: flex;
+    justify-content: space-between; /* Adjust the spacing between the items */
+    gap: 20px; /* Adjust the gap between the number blocks */
+}
+
+/* Flexbox item for each number block */
+.number-block {
+    flex: 1;
+    text-align: center; /* Center align the text within each block */
+}
+
+
+.thick {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #272123;
+    text-decoration-thickness: 1.9rem;
+  }
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #ccc; /* Adjust the color as needed */
+    width: 50%; /* Adjust the width as needed */
+    margin: 20px auto; /* Adjust the margin as needed */
+}  
+
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+}  
+
+/* Section Styling */
+section {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#intro{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#global-scale{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#explore-map{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#banned-genres{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#top-banned-text {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#Methodology{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+#Methodology p {
+    font-family: "CooperThinRegular";
+    font-size: 0.8em; /* Adjust the font size as needed */
+}
+
+#why-matters {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    text-align: left;
+}
+
+/* Style the footer -----------------------------------------------*/
+footer {
+    background-color: #484848; /* Change this to your desired color */
+    color: #fff; /* Optional: Set text color for better contrast */
+    padding-bottom: 20px;
+}
+
+.explore-map {
+    align-items: center;
+    padding: 20px;
+}
+
+/* Map Container ---------------------------------------------------*/
+.background-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 40px; /* Adjust the gap between text boxes */
+    padding: 20px 100px; /* Add padding to the left and right */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    height: auto; /* Adjust as needed */
+}
+
+
+.text-box-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 300px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Space below each container */
+}
+
+.radial-pattern {
+    position: relative;
+    width: 50px; 
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: white;
+}
+
+/* 🎯 Dot styling */
+.dot {
+    position: absolute;
+    width: 3px; /* Default dot size */
+    height: 3px;
+    background-color: red; /* Change dot color here */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.text-box {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    font-size: 0.9em; /* Set smaller font size */
+    font-family: "CooperThinRegular";
+    text-align: left;
+
+}
+
+
+
+
+/* Scrollable Book Covers ------------------------------------------*/
+/* 📚 Horizontal Scroll Container */
+.books-container {
+   
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* 📖 Books Wrapper for Horizontal Scroll */
+.books-wrapper {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 90%;
+    padding: 50px;
+}
+
+/* 🎨 Book Card */
+.book {
+    width: 250px;
+    border-radius: 8px;
+    background-color: #484848;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* 🔢 Book Number Circle */
+.book-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #C9372A;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 1.1em;
+    color: #F2EDE6;
+}
+
+.reason {
+    font-size: 0.9em;
+    font-family: "CooperMediumRegular"
+
+}
+
+.book .author {
+    font-size: 0.9em;
+    color: #F2EDE6;
+}
+
+/* 🗺️ Banned Info Section */
+.banned-info {
+    margin-top: 10px;
+    background: #CC9A75;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/* 📜 Scrollable Banned Countries */
+.banned-countries {
+    max-height: 70px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+.banned-countries p {
+    margin: 5px 0;
+    font-size: 0.85em;
+}
+
+/* 📚 Bookshelf Below Books */
+.bookshelf {
+    position: absolute;
+    margin-top: 32em;
+    align-items: center;
+    width: 94%;
+    height:30px;
+    background: #8B4513;
+    box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+
+/* Search Section -------------------------------*/
+#search-book input {
+    padding: 10px;
+    width: 60%;
+}
+
+#search-results {
+    margin-top: 20px;
+    font-weight: bold;
+}
